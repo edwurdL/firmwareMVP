@@ -9,10 +9,29 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "cppdbg",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "C:/Users/scrip/OneDrive/Documents/MTBR/firmwareMVP/prev_code/pio_test/.pio/build/esp32dev/firmware.elf",
+            "executable": "C:/Users/scrip/OneDrive/Documents/MTBR/firmwareMVP/prev_code/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/scrip/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
@@ -25,7 +44,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "C:/Users/scrip/OneDrive/Documents/MTBR/firmwareMVP/prev_code/pio_test/.pio/build/esp32dev/firmware.elf",
+            "executable": "C:/Users/scrip/OneDrive/Documents/MTBR/firmwareMVP/prev_code/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/scrip/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart"
@@ -34,7 +53,7 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "C:/Users/scrip/OneDrive/Documents/MTBR/firmwareMVP/prev_code/pio_test/.pio/build/esp32dev/firmware.elf",
+            "executable": "C:/Users/scrip/OneDrive/Documents/MTBR/firmwareMVP/prev_code/.pio/build/esp32dev/firmware.elf",
             "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/scrip/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
