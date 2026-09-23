@@ -53,12 +53,6 @@ monitor_port = COM4  ; usually same as upload_port
 lib_deps = ; put libraries here
 ```
 
-**Fixes/notes from the draft:**
-- INI files use `;` for comments, not `//` — `//` will cause a parse error.
-- `board = esp32dev` is a generic devkit ID. If you know your exact board, run `pio boards espressif32` to find the correct one — using the wrong board ID can cause upload or pin-mapping issues.
-- `upload_port` / `monitor_port` are **optional** — PlatformIO auto-detects the port by default. Only set these if auto-detect picks the wrong device or you want it pinned.
-- The `Adafruit SSD1306`/`GFX` libraries are only needed if you're driving an SSD1306 OLED over I2C. Delete `lib_deps` (or trim it) if your project doesn't need them.
-
 ### Finding your COM port
 - **Windows:** Device Manager → Ports (COM & LPT)
 - **Any OS:** `pio device list` (run in terminal) lists all connected serial devices
