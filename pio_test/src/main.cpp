@@ -24,7 +24,7 @@ Adafruit_VL53L1X vl53 = Adafruit_VL53L1X(VL53_XSHUT_PIN);
 void setup() {
   Serial.begin(115200);
   delay(1000); // give serial monitor time to connect
-  Serial.println("ESP32 boot OK - starting blink test");
+  Serial.println("ESP32 boot OK");
 
   Wire.begin(SDA, SCL);
   
