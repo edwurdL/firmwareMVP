@@ -28,8 +28,8 @@ void setup() {
 
   Wire.begin(SDA, SCL);
   
-  pinMode(VL5_XSHUT_PIN, OUTPUT);
-  digitalWrite(VL5_XSHUT_PIN, HIGH); // enable sensor before begin()
+  pinMode(VL53_XSHUT_PIN, OUTPUT);
+  digitalWrite(VL53_XSHUT_PIN, HIGH); // enable sensor before begin()
   delay(10); // brief settle time after power-up
 
   if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
